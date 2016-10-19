@@ -1,0 +1,90 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VideoKiosK.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CTIGatewayHost" Type="System.String" Scope="User">
+      <Value Profile="(Default)">127.0.0.1</Value>
+    </Setting>
+    <Setting Name="CTIGatewayPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30001</Value>
+    </Setting>
+    <Setting Name="UserID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">administrator</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1234</Value>
+    </Setting>
+    <Setting Name="Server" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AVAYA#AVAYA_ECS#CSTA#PBX</Value>
+    </Setting>
+    <Setting Name="DeviceID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">20001</Value>
+    </Setting>
+    <Setting Name="DialPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">123456</Value>
+    </Setting>
+    <Setting Name="dialPrefix" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="dialSeparator" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DestinationID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">20002</Value>
+    </Setting>
+    <Setting Name="UUI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">20002</Value>
+    </Setting>
+    <Setting Name="Width" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">300</Value>
+    </Setting>
+    <Setting Name="Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">768</Value>
+    </Setting>
+    <Setting Name="X" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1050</Value>
+    </Setting>
+    <Setting Name="Y" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Flash" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\videobanking.swf</Value>
+    </Setting>
+    <Setting Name="ButtonColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="URL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\\Share\\_StartHere.html</Value>
+    </Setting>
+    <Setting Name="Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.12.130</Value>
+    </Setting>
+    <Setting Name="Port" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">4445</Value>
+    </Setting>
+    <Setting Name="Browser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">iexplore</Value>
+    </Setting>
+    <Setting Name="OpenFlash" Type="System.String" Scope="User">
+      <Value Profile="(Default)">cmd.exe</Value>
+    </Setting>
+    <Setting Name="OpenVideo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">cmd.exe</Value>
+    </Setting>
+    <Setting Name="HourEOD" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">17</Value>
+    </Setting>
+    <Setting Name="MinuteEOD" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="HourStart" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="MinuteStart" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CTIGatewayPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\CTIGateway\\CTIGateway.exe</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
