@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace VideoKiosk.objects
+namespace VideoKiosK.objects
 {
     public delegate void TelephonyEventHandler(object sender, cTelephonyEventArgs e);
 

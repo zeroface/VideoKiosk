@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using log4net;
 
-namespace VideoKiosk.utility
+namespace VideoKiosK.utility
 {
     class LogHelper
     {

@@ -5,7 +5,7 @@ using System.Text;
 using System.Net.Sockets;
 using System.IO;
 
-namespace VideoKiosk.objects
+namespace VideoKiosK.objects
 {
     class cTelephony
     {
@@ -242,7 +242,7 @@ namespace VideoKiosk.objects
                 {
                     m_stream.Write(System.Text.ASCIIEncoding.ASCII.GetBytes(message), 0, message.Length);
                 }
-                catch (Exception exc)
+                catch (Exception)
                 {
                     //utility.LogHelper.logger.Error("[cTelephony::Login]", exc);
                     cTelephonyEventArgs args = new cTelephonyEventArgs("0;0;CONNECTION_FAILURE;");
@@ -266,7 +266,7 @@ namespace VideoKiosk.objects
                     m_stream.Write(System.Text.ASCIIEncoding.ASCII.GetBytes(message), 0, message.Length);
                     return true;
                 }
-                catch (Exception exc)
+                catch (Exception)
                 {
                     //utility.LogHelper.logger.Error("[cTelephony::MakeCall]", exc);
                     cTelephonyEventArgs args = new cTelephonyEventArgs("0;0;CONNECTION_FAILURE;");
@@ -287,7 +287,7 @@ namespace VideoKiosk.objects
                     m_stream.Write(System.Text.ASCIIEncoding.ASCII.GetBytes(message), 0, message.Length);
                     return true;
                 }
-                catch (Exception exc)
+                catch (Exception)
                 {
                     //utility.LogHelper.logger.Error("[cTelephony::DropCall]", exc);
                     cTelephonyEventArgs args = new cTelephonyEventArgs("0;0;CONNECTION_FAILURE;");
@@ -307,7 +307,7 @@ namespace VideoKiosk.objects
                     m_stream.Write(System.Text.ASCIIEncoding.ASCII.GetBytes(message), 0, message.Length);
                     return true;
                 }
-                catch (Exception exc)
+                catch (Exception)
                 {
                     //utility.LogHelper.logger.Error("[cTelephony::Hold]", exc);
                     cTelephonyEventArgs args = new cTelephonyEventArgs("0;0;CONNECTION_FAILURE;");
@@ -327,7 +327,7 @@ namespace VideoKiosk.objects
                     m_stream.Write(System.Text.ASCIIEncoding.ASCII.GetBytes(message), 0, message.Length);
                     return true;
                 }
-                catch (Exception exc)
+                catch (Exception)
                 {
                     //utility.LogHelper.logger.Error("[cTelephony::UnholdCall]", exc);
                     cTelephonyEventArgs args = new cTelephonyEventArgs("0;0;CONNECTION_FAILURE;");
@@ -453,7 +453,7 @@ namespace VideoKiosk.objects
                     {
                         m_stream.Close();
                     }
-                    catch (Exception exc)
+                    catch (Exception)
                     {
                         //utility.LogHelper.logger.Error("[cTelephony::raiseEvent]", exc);
                     }

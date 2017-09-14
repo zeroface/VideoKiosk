@@ -97,7 +97,7 @@ namespace VideoKiosK.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("123456")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1234")]
         public string DialPassword {
             get {
                 return ((string)(this["DialPassword"]));
@@ -229,7 +229,7 @@ namespace VideoKiosK.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\\\Share\\\\_StartHere.html")]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\\\Share\\\\_Start.html")]
         public string URL {
             get {
                 return ((string)(this["URL"]));
@@ -241,7 +241,7 @@ namespace VideoKiosK.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("192.168.12.130")]
+        [global::System.Configuration.DefaultSettingValueAttribute("192.168.1.104")]
         public string Host {
             get {
                 return ((string)(this["Host"]));
@@ -253,7 +253,7 @@ namespace VideoKiosK.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("4445")]
+        [global::System.Configuration.DefaultSettingValueAttribute("8888")]
         public int Port {
             get {
                 return ((int)(this["Port"]));
@@ -349,13 +349,97 @@ namespace VideoKiosK.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\CTIGateway\\\\CTIGateway.exe")]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\\\aa\\\\CTIGateway\\\\CTIGateway.exe")]
         public string CTIGatewayPath {
             get {
                 return ((string)(this["CTIGatewayPath"]));
             }
             set {
                 this["CTIGatewayPath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("127.0.0.1")]
+        public string HostPop {
+            get {
+                return ((string)(this["HostPop"]));
+            }
+            set {
+                this["HostPop"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("9999")]
+        public int PortPop {
+            get {
+                return ((int)(this["PortPop"]));
+            }
+            set {
+                this["PortPop"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("PIM 2")]
+        public string Location {
+            get {
+                return ((string)(this["Location"]));
+            }
+            set {
+                this["Location"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://www.bni.co.id/id-id/tarif/kartukredit/kartukreditsilver.aspx")]
+        public string webURLCC {
+            get {
+                return ((string)(this["webURLCC"]));
+            }
+            set {
+                this["webURLCC"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://www.bni.co.id/id-id/tarif/ebanking/bniinternetbanking.aspx")]
+        public string webURLATM {
+            get {
+                return ((string)(this["webURLATM"]));
+            }
+            set {
+                this["webURLATM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://www.bni.co.id/id-id/tarif/pinjaman/bnigriya.aspx")]
+        public string webURLPinj {
+            get {
+                return ((string)(this["webURLPinj"]));
+            }
+            set {
+                this["webURLPinj"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://bni.co.id/tarif/simpanan/taplus.aspx")]
+        public string webURLSimp {
+            get {
+                return ((string)(this["webURLSimp"]));
+            }
+            set {
+                this["webURLSimp"] = value;
             }
         }
     }

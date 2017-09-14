@@ -21,7 +21,7 @@
       <Value Profile="(Default)">20001</Value>
     </Setting>
     <Setting Name="DialPassword" Type="System.String" Scope="User">
-      <Value Profile="(Default)">123456</Value>
+      <Value Profile="(Default)">1234</Value>
     </Setting>
     <Setting Name="dialPrefix" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
@@ -54,13 +54,13 @@
       <Value Profile="(Default)">White</Value>
     </Setting>
     <Setting Name="URL" Type="System.String" Scope="User">
-      <Value Profile="(Default)">D:\\Share\\_StartHere.html</Value>
+      <Value Profile="(Default)">D:\\Share\\_Start.html</Value>
     </Setting>
     <Setting Name="Host" Type="System.String" Scope="User">
-      <Value Profile="(Default)">192.168.12.130</Value>
+      <Value Profile="(Default)">192.168.1.104</Value>
     </Setting>
     <Setting Name="Port" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">4445</Value>
+      <Value Profile="(Default)">8888</Value>
     </Setting>
     <Setting Name="Browser" Type="System.String" Scope="User">
       <Value Profile="(Default)">iexplore</Value>
@@ -84,7 +84,28 @@
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="CTIGatewayPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\\CTIGateway\\CTIGateway.exe</Value>
+      <Value Profile="(Default)">D:\\aa\\CTIGateway\\CTIGateway.exe</Value>
+    </Setting>
+    <Setting Name="HostPop" Type="System.String" Scope="User">
+      <Value Profile="(Default)">127.0.0.1</Value>
+    </Setting>
+    <Setting Name="PortPop" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">9999</Value>
+    </Setting>
+    <Setting Name="Location" Type="System.String" Scope="User">
+      <Value Profile="(Default)">PIM 2</Value>
+    </Setting>
+    <Setting Name="webURLCC" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.bni.co.id/id-id/tarif/kartukredit/kartukreditsilver.aspx</Value>
+    </Setting>
+    <Setting Name="webURLATM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.bni.co.id/id-id/tarif/ebanking/bniinternetbanking.aspx</Value>
+    </Setting>
+    <Setting Name="webURLPinj" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.bni.co.id/id-id/tarif/pinjaman/bnigriya.aspx</Value>
+    </Setting>
+    <Setting Name="webURLSimp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://bni.co.id/tarif/simpanan/taplus.aspx</Value>
     </Setting>
   </Settings>
 </SettingsFile>

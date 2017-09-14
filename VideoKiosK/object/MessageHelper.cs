@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 using System.Diagnostics;
 
 
-namespace VideoKiosk.objects
+namespace VideoKiosK.objects
 {
     public class MessageHelper
     {

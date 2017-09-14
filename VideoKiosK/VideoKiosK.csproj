@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{A2B39DA0-777D-4EF1-9CAF-12D9F110AC32}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>VideoKiosK</RootNamespace>
     <AssemblyName>VideoKiosK</AssemblyName>
@@ -16,7 +16,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -25,9 +25,9 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -50,36 +50,76 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main.cs">
+    <Compile Include="Form\CC.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
+    <Compile Include="Form\CC.Designer.cs">
+      <DependentUpon>CC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Simpanan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Simpanan.Designer.cs">
+      <DependentUpon>Simpanan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ATM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ATM.Designer.cs">
+      <DependentUpon>ATM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\Pinjaman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Pinjaman.Designer.cs">
+      <DependentUpon>Pinjaman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="object\Communicator.cs" />
     <Compile Include="object\cTelephony.cs" />
     <Compile Include="object\cTelephonyEventArgs.cs" />
     <Compile Include="object\MessageHelper.cs" />
     <Compile Include="object\UserActivityHook.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
     <Compile Include="utility\RoundButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="utility\LogHelper.cs" />
-    <EmbeddedResource Include="Main.resx">
+    <EmbeddedResource Include="Form\ATM.resx">
+      <DependentUpon>ATM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\CC.resx">
+      <DependentUpon>CC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Simpanan.resx">
+      <DependentUpon>Simpanan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pinjaman.resx">
+      <DependentUpon>Pinjaman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -92,10 +132,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <COMReference Include="ShockwaveFlashObjects">
-      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
       <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
+      <VersionMinor>1</VersionMinor>
       <Lcid>0</Lcid>
       <WrapperTool>tlbimp</WrapperTool>
       <Isolated>False</Isolated>
@@ -103,25 +143,10 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\VideoKiosKHome.bmp" />
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\VidKioskHome.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Deposito BNI.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ATM.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\CC.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Deposit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\KPR.png" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
